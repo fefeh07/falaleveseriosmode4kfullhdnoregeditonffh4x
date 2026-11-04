@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#286b4f">
+    <title>Fala Leve | Conversa com psicólogo</title>
+    <link rel="stylesheet" href="chat-responsavel.css">
+    <script src="chat-responsavel.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <header class="topbar">
+            <div class="brand"><div class="brand-icon">✦</div><div><h1>FalaLeve</h1><p>Área do responsável</p></div></div>
+            <button class="logout-button" id="logoutButton" type="button">↪ Sair</button>
+            <div class="status"><span class="status-dot"></span>Conversa</div>
+        </header>
+        <div class="workspace">
+            <section class="chat-panel">
+                <div class="chat-header">
+                    <div><h2 id="chatPatientName">Conversa</h2><p>Atendimento psicológico online</p></div>
+                    <div class="chat-header-actions"><span class="patient-tag" id="chatPatientTag">Psicólogo</span><a class="back-menu-button" href="../menu-responsavel.html">&larr; Voltar ao menu</a></div>
+                </div>
+                <div class="messages" id="messages" aria-live="polite"></div>
+                <form class="message-form" id="messageForm">
+                    <input type="text" id="messageInput" placeholder="Escreva uma mensagem..." autocomplete="off" aria-label="Mensagem para o psicólogo" maxlength="2000" required>
+                    <button type="submit">Enviar ↗</button>
+                </form>
+                <div class="chat-disclaimer">Demonstração local: as mensagens ficam salvas neste navegador.</div>
+            </section>
+        </div>
+        <footer class="footer"><span>© 2026 FalaLeve</span><span>Acolhimento, escuta e cuidado.</span></footer>
+    </main>
+</body>
+</html>

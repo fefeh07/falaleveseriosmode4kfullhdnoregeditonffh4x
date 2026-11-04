@@ -1,0 +1,278 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #286B4F;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card-externo {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 1.25rem;
+      width: 100%;
+      max-width: 920px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* PAINEL ESQUERDO */
+    .painel-esquerdo {
+      background: #286B4F;
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 290px;
+      flex-shrink: 0;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: #DCEFE3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo i {
+      font-size: 22px;
+      color: #286B4F;
+    }
+
+    .painel-esquerdo h1 {
+      font-size: 21px;
+      font-weight: 500;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .painel-esquerdo .sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      color: #ffffff;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 4px 10px;
+    }
+
+    .badge i {
+      font-size: 12px;
+    }
+
+    /* PAINEL DIREITO */
+    .painel-direito {
+      padding: 2.5rem 2rem;
+      flex: 1;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #2F7658;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .divider {
+      height: 1px;
+      background: #DDEBE1;
+      margin: 1.5rem 0;
+    }
+
+    .field {
+      margin-bottom: 1.1rem;
+      position: relative;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    input {
+      width: 100%;
+      height: 40px;
+      padding: 0 12px 0 38px;
+      border: 1px solid #C9DED0;
+      border-radius: 10px;
+      background: #FAFCFA;
+      color: #1a1a1a;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      font-family: inherit;
+    }
+
+    input:focus {
+      border-color: #2F7658;
+      box-shadow: 0 0 0 3px rgba(47,118,88,0.16);
+    }
+
+    input::placeholder {
+      color: #bbb;
+    }
+
+    .field .field-icon {
+      position: absolute;
+      left: 11px;
+      top: 32px;
+      font-size: 16px;
+      color: #2F7658;
+      pointer-events: none;
+    }
+
+    .password-control {
+      position: relative;
+    }
+
+    #senha {
+      padding-right: 42px;
+    }
+
+    #btn-olho {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #2F7658;
+      font-size: 16px;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .error {
+      font-size: 12px;
+      color: #c0392b;
+      margin-top: 4px;
+      display: none;
+    }
+
+    /* REQUISITOS DE SENHA */
+    .requisitos {
+      list-style: none;
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .requisitos li {
+      font-size: 11px;
+      color: #bbb;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.2s;
+    }
+
+    .requisitos li.ok {
+      color: #27ae60;
+    }
+
+    .btn {
+      width: 100%;
+      height: 44px;
+      border: none;
+      border-radius: 10px;
+      background: #2F7658;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      margin-top: 0.5rem;
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      background: #205C43;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+      margin-top: 1.25rem;
+      line-height: 1.6;
+    }
+
+    .footer-note a {
+      color: #2F7658;
+      text-decoration: none;
+    }
+
+    .footer-note a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 680px) {
+      .card {
+        flex-direction: column;
+      }
+
+      .painel-esquerdo {
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+      }
+
+      .row {
+        grid-template-columns: 1fr;
+      }
+
+      .card-externo {
+        padding: 0.75rem;
+      }
+    }
+
+.account-link { margin-top: 0.5rem !important; }
+.account-link a { font-weight: 600; }

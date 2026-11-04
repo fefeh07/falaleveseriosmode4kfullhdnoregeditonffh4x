@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FalaLeve | Painel do Psicólogo</title>
+    <link rel="stylesheet" href="chat-psicologo.css">
+</head>
+<body>
+    <main class="app">
+
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+                <div>
+                    <h1>FalaLeve</h1>
+                    <p>Painel do psicólogo</p>
+                </div>
+            </div>
+            
+            <button class="logout-button" id="logoutButton" type="button">
+                ↪ Sair
+            </button>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                Atendimento em andamento
+            </div>
+        </header>
+
+        <div class="workspace">
+
+            <section class="chat-panel">
+                <div class="chat-header">
+                    <div>
+                        <h2 id="chatPatientName">Conversa com paciente</h2>
+                        <p>Atendimento psicológico online</p>
+                    </div>
+                    <div class="chat-header-actions">
+                        <span class="patient-tag" id="chatPatientTag">Paciente</span>
+                        <a class="back-menu-button" href="../menu-psicologo.html">&larr; Voltar ao menu</a>
+                    </div>
+                </div>
+
+                <div class="messages" id="messages" aria-live="polite">
+                    <div class="date-divider">
+                        <span>Início da conversa</span>
+                    </div>
+
+                    <div class="message received">
+                        
+                        <span class="message-time">Paciente</span>
+                    </div>
+
+                    <div class="message sent">
+                        
+                        <span class="message-time">Você · Psicólogo</span>
+                    </div>
+                </div>
+
+                <form class="message-form" id="messageForm">
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder=""
+                        autocomplete="off"
+                        aria-label="Mensagem para o paciente"
+                        required
+                    >
+                    <button type="submit">Enviar ↗</button>
+                </form>
+
+                <div class="chat-disclaimer">
+                    Protótipo local: as mensagens ficam salvas neste navegador.
+                </div>
+            </section>
+
+            <aside class="notes-panel">
+                <div class="notes-heading">
+                    <div class="notes-icon">✎</div>
+                    <div>
+                        <h2>Anotações da sessão</h2>
+                        <p>Registro profissional</p>
+                    </div>
+                </div>
+
+                <label for="noteTitle">Título da anotação</label>
+                <input
+                    type="text"
+                    id="noteTitle"
+                    placeholder="Ex.: Sessão de acompanhamento"
+                >
+
+                <label for="noteContent">Observações</label>
+                <textarea
+                    id="noteContent"
+                    placeholder="Registre pontos importantes e próximos passos..."
+                ></textarea>
+
+                <div class="notes-tip">
+                    As anotações serão vinculadas ao paciente e aparecerão no menu do psicólogo.
+                    Este protótipo usa o armazenamento local deste navegador.
+                </div>
+
+                <button class="save-note-button" id="saveNotes" type="button">
+                    Salvar anotação
+                </button>
+                <button class="clear-button" id="clearNotes" type="button">
+                    Limpar campos
+                </button>
+                <p class="note-feedback" id="noteFeedback" aria-live="polite"></p>
+            </aside>
+
+        </div>
+
+        <footer class="footer">
+            <span>© 2026 FalaLeve</span>
+            <span>Acolhimento, escuta e cuidado.</span>
+        </footer>
+
+    </main>
+
+
+<!-- Modal de confirmação -->
+<div class="modal-overlay" id="confirmModal" aria-hidden="true">
+    <div
+        class="confirm-modal"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="confirmTitle"
+        aria-describedby="confirmDescription"
+        tabindex="-1"
+    >
+        <div class="alert-icon">!</div>
+
+        <h2 id="confirmTitle">Limpar anotações?</h2>
+
+        <p id="confirmDescription">
+            Tem certeza de que deseja apagar todas as anotações desta sessão?
+            Essa ação não poderá ser desfeita.
+        </p>
+
+        <div class="modal-actions">
+            <button type="button" class="cancel-button" id="cancelClear">
+                Cancelar
+            </button>
+
+            <button type="button" class="confirm-button" id="confirmClear">
+                Sim, limpar
+            </button>
+        </div>
+    </div>
+</div>
+
+
+    <script src="chat-psicologo.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import url("../../../paciente/login/menu/menu-paciente.css");
+
+:root{--responsible-green:#286b4f;--responsible-green-dark:#20583f;--responsible-pale:#dcefe3}
+.brand-mark{background:var(--responsible-pale);color:var(--responsible-green)}
+.brand>span:last-child>span{color:var(--responsible-green)}
+.logout-button:hover{border-color:var(--responsible-green);background:#f4faf5}
+.hero .eyebrow,.section-heading .eyebrow{color:#34785e}
+.hero h1 span{color:var(--responsible-green)}
+.menu-tabs{border-bottom-color:#d7e6dc}
+.menu-tab:hover{color:var(--responsible-green-dark)}
+.menu-tab.active{color:var(--responsible-green)}
+.menu-tab.active:after{background:var(--responsible-green)}
+.mine-count{background:#eaf4ed;color:var(--responsible-green)}
+.search-box:focus-within{border-color:var(--responsible-green);box-shadow:0 0 0 3px #286b4f18}
+.card-specialty,.mine-details .card-specialty{color:#34785e}
+.psych-card-top{background:linear-gradient(135deg,#eef6f0,#e0eee4)}
+.portrait{background:#dcefe3;color:#286b4f}
+.rating{border-color:#d7e6dc;color:#496757}
+.card-tag{border-color:#dfe9e2;background:#f7fbf8;color:#53645a}
+.profile-button{border-color:#9bbca7;color:#286b4f}
+.profile-button:hover,.text-action{background:#286b4f;color:#fff}
+.empty-icon{background:#eaf4ed;color:#286b4f}
+.profile-cover{background:linear-gradient(115deg,#286b4f,#20583f)}
+.schedule-legend .legend-dot{background:#438565}
+.time-slot.available{border-color:#a9cdb5;background:#f1f8f3;color:#286b4f}
+.time-slot.available:hover,.time-slot.available.selected{border-color:#286b4f;background:#286b4f;color:#fff}
+.request-button{border-color:#286b4f;background:#286b4f}
+.request-button.ongoing-request{border-color:#b9d1c0;background:#f3f8f4;color:#286b4f}
+.request-button.ongoing-request:hover{background:#eaf4ed}
+.request-feedback,.form-feedback{color:#286b4f}
+.mine-avatar{background:#eaf4ed;color:#286b4f}
+.request-cancel-button:hover{border-color:#286b4f;background:#286b4f}
+.chat-open-link{border-color:#9bbca7;color:#286b4f}
+.chat-open-link:hover{background:#286b4f;color:#fff}
+.long-request-card select:focus,.long-request-card textarea:focus{border-color:#286b4f;box-shadow:0 0 0 3px #286b4f18}
+.long-request-card input{width:100%;height:40px;padding:0 12px;border:1px solid #ded6d3;border-radius:6px;background:#fff;color:#332f31}
+.long-request-card input:focus{border-color:#286b4f;outline:0;box-shadow:0 0 0 3px #286b4f18}
+.long-request-card input[type=number]{padding-right:8px}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline-color:#286b4f66}

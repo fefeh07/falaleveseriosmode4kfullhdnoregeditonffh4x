@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar — Psicólogo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+  <link rel="stylesheet" href="../psico.css">
+  <script src="entrar.js" defer></script>
+</head>
+<body>
+
+  <div class="card-externo">
+    <div class="card">
+
+      <div class="painel-esquerdo">
+        <div class="logo"><i class="ti ti-heart-handshake"></i></div>
+        <h1>Entrar na conta</h1>
+        <p class="sub">Acesse sua área profissional com e-mail e senha.</p>
+        <div class="badge"><i class="ti ti-lock"></i> Dados protegidos e sigilosos</div>
+      </div>
+
+      <div class="painel-direito">
+        <form id="form-login" novalidate>
+          <p class="section-label">Acesso</p>
+
+          <div class="field">
+            <label for="email_psicologo">E-mail</label>
+            <i class="ti ti-mail field-icon"></i>
+            <input id="email_psicologo" name="email_psicologo" type="email" placeholder="seu@email.com" autocomplete="username" required>
+          </div>
+
+          <div class="field">
+            <label for="senha">Senha</label>
+            <i class="ti ti-lock field-icon"></i>
+            <div class="password-control">
+              <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+              <button type="button" onclick="toggleSenha()" id="btn-olho" aria-label="Mostrar senha" aria-pressed="false">
+                <i class="ti ti-eye" id="icone-olho"></i>
+              </button>
+            </div>
+          </div>
+
+          <button class="btn" type="submit">Entrar →</button>
+
+          <p class="footer-note" id="msg-status" role="status"></p>
+          <p class="footer-note">Demonstração offline 1: <strong>demo@falaleve.local</strong> / <strong>Psicologo123!</strong><br>Demonstração offline 2: <strong>demo2@falaleve.local</strong> / <strong>Psicologo456!</strong></p>
+          <p class="footer-note">
+            Não tem conta? <a href="../login_psicologo.html">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+

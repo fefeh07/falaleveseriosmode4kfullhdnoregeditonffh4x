@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#286b4f">
+    <title>Área do responsável — Fala Leve</title>
+    <link rel="stylesheet" href="menu-responsavel.css">
+    <script src="menu-responsavel.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../../../index.html" aria-label="Fala Leve, início">
+            <span class="brand-mark">F</span><span>fala<span>leve</span></span>
+        </a>
+        <div class="account-area">
+            <span class="welcome" id="responsibleWelcome">Área do responsável</span>
+            <button class="logout-button" id="logoutButton" type="button">Sair</button>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero">
+            <div>
+                <span class="eyebrow" id="heroEyebrow">FALA LEVE · ÁREA DO RESPONSÁVEL</span>
+                <h1 id="heroTitle">Encontre apoio para <span>alguém</span></h1>
+                <p id="heroDescription">Consulte profissionais e solicite atendimento para uma pessoa próxima.</p>
+            </div>
+        </section>
+
+        <nav class="menu-tabs" aria-label="Menu do responsável">
+            <button class="menu-tab active" type="button" data-view="discover" aria-selected="true">Encontrar psicólogo</button>
+            <button class="menu-tab" type="button" data-view="people" aria-selected="false">Pessoas acompanhadas <span class="mine-count" id="peopleCount">0</span></button>
+            <button class="menu-tab" type="button" data-view="requests" aria-selected="false">Pedidos e horários <span class="mine-count" id="requestCount">0</span></button>
+        </nav>
+
+        <section class="directory menu-view active" id="discoverView" aria-labelledby="directoryTitle">
+            <div class="section-heading">
+                <div><span class="eyebrow">PROFISSIONAIS</span><h2 id="directoryTitle">Psicólogos disponíveis</h2></div>
+                <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchPsychologists" type="search" placeholder="Buscar por nome ou abordagem" aria-label="Buscar psicólogos"></label>
+            </div>
+            <p class="directory-status" id="directoryStatus" role="status"></p>
+            <div class="psychologist-grid" id="psychologistGrid"></div>
+            <div class="empty-state" id="directoryEmpty" hidden>
+                <h3>Nenhum profissional disponível no momento</h3>
+                <p>Tente novamente mais tarde.</p>
+            </div>
+        </section>
+
+        <section class="directory menu-view" id="peopleView" aria-labelledby="peopleTitle" hidden>
+            <div class="section-heading"><div><span class="eyebrow">ACOMPANHAMENTO</span><h2 id="peopleTitle">Pessoas acompanhadas</h2></div></div>
+            <p class="directory-status" id="peopleStatus" role="status"></p>
+            <div class="mine-list" id="peopleList"></div>
+            <div class="empty-state" id="peopleEmpty" hidden>
+                <h3>Nenhum acompanhamento ativo</h3>
+                <p>Quando um psicólogo aceitar um pedido contínuo, a pessoa aparecerá nesta lista.</p>
+                <button class="text-action" id="goDiscover" type="button">Encontrar psicólogos</button>
+            </div>
+        </section>
+
+        <section class="directory menu-view" id="requestsView" aria-labelledby="requestsTitle" hidden>
+            <div class="section-heading"><div><span class="eyebrow">SOLICITAÇÕES E AGENDA</span><h2 id="requestsTitle">Pedidos e horários</h2></div></div>
+            <p class="directory-status" id="requestsStatus" role="status"></p>
+            <div class="mine-list" id="requestsList"></div>
+            <div class="empty-state" id="requestsEmpty" hidden>
+                <h3>Nenhum pedido ou horário solicitado</h3>
+                <p>Os pedidos feitos para as pessoas sob seus cuidados aparecerão aqui.</p>
+                <button class="text-action" id="goDiscoverFromRequests" type="button">Encontrar psicólogos</button>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="profile-dialog" id="profileDialog" aria-labelledby="profileName">
+        <button class="dialog-close" id="closeProfile" type="button" aria-label="Fechar perfil">×</button>
+        <div id="profileContent"></div>
+        <section class="long-request-panel" id="beneficiaryPanel" hidden aria-labelledby="beneficiaryTitle">
+            <div class="long-request-card">
+                <button class="dialog-close form-close" id="closeBeneficiaryPanel" type="button" aria-label="Fechar formulário">×</button>
+                <span class="eyebrow">DADOS DE QUEM RECEBERÁ O ATENDIMENTO</span>
+                <h2 id="beneficiaryTitle">Sobre a pessoa</h2>
+                <p>Informe quem receberá o atendimento e, no pedido contínuo, explique a situação.</p>
+                <form id="beneficiaryForm">
+                    <label for="beneficiaryName">Nome da pessoa</label>
+                    <input id="beneficiaryName" name="nome_paciente" type="text" maxlength="100" autocomplete="off" required>
+                    <label for="beneficiaryRelationship">Relação com você</label>
+                    <select id="beneficiaryRelationship" name="relacao_responsavel" required>
+                        <option value="">Selecione</option>
+                        <option>Familiar</option><option>Parente</option><option>Amigo(a)</option>
+                        <option>Cônjuge</option><option>Colega</option><option>Outro</option>
+                    </select>
+                    <label for="beneficiaryAge">Idade (opcional)</label>
+                    <input id="beneficiaryAge" name="idade" type="number" min="1" max="120" inputmode="numeric">
+                    <label for="situationDescription">O que está acontecendo e o que espera do acompanhamento?</label>
+                    <textarea id="situationDescription" name="descricao_situacao" rows="5" minlength="20" maxlength="1200" placeholder="No pedido de atendimento contínuo, escreva pelo menos 20 caracteres."></textarea>
+                    <p class="form-feedback" id="formFeedback" role="status"></p>
+                    <div class="form-actions"><button class="request-button ongoing-request" id="cancelBeneficiaryForm" type="button">Voltar</button><button class="request-button" id="sendBeneficiaryRequest" type="submit">Enviar pedido</button></div>
+                </form>
+            </div>
+        </section>
+    </dialog>
+</body>
+</html>

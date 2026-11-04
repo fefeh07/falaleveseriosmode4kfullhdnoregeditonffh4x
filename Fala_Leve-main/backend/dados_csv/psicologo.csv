@@ -1,0 +1,5 @@
+id_psicologo,nome_psicologo,cpf_psicologo,rg_psicologo,crp_psicologo,regiao_psicologo,status_psicologo,data_formatura_psicologo,email_psicologo,telefone_psicologo,area_especialidade,data_nascimento_psicologo,criado_em,senha_hash
+1,miguel jorrinha,10128704993,,12/34567,,,,miguel.jorra@escola.pr.gov.br,,,2000-12-12,2026-10-22T11:07:48.206046+00:00,"$argon2id$v=19$m=65536,t=3,p=4$SeJf3wj/WO2jes3bubvqjA$yo0EnAWBe3sO6FLOF6+eHcSshpj7eGPpj4XkzLkpImk"
+2,miguel de freitas jorra,10128704993,,12/34567,,,,miguel@escola.pr.gov.br,,,2000-12-12,2026-10-22T11:27:05.768089+00:00,"$argon2id$v=19$m=65536,t=3,p=4$309n/7cVg0Ahfc0pT6GO8Q$CHWZQlEmotLaNULXR2IrC7wbv1UHuAjQciBTHJunMBs"
+3,migurel rola pinto de souza,10128704993,,12/34567,,,,miguel.jorra@escola.pr.gov.br,,,2000-12-12,2026-10-22T11:32:43.866327+00:00,"$argon2id$v=19$m=65536,t=3,p=4$APbum5DK6c8hm6hE81dwrg$pxKc/I0qdK1ufhmfO4a1mBggpIr9kKYMqJZ3olsu1lA"
+4,miguel de freitas jorra,10128704993,,12/12121,,,,miguel.jorra@escola.pr.gov.br,,,2000-12-12,2026-10-22T11:35:27.196792+00:00,"$argon2id$v=19$m=65536,t=3,p=4$Di61vyHfuu8YLbZgkxlMQg$Npa6HKazIp8ervt3U5qvyZ79fTzRAWjXGH4/WHLHLLs"

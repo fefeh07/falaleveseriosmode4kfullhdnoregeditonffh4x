@@ -1,0 +1,237 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FalaLeve | Menu do Psicólogo</title>
+    <link rel="stylesheet" href="menu-psicologo.css">
+    <script src="menu-psicologo.js" defer></script>
+</head>
+<body>
+
+
+
+
+  
+
+  
+
+    <main class="app">
+        <header class="topbar">
+            <a class="brand" href="menu-psicologo.html">
+                <span class="brand-icon">✦</span>
+                <span>
+                    <strong>FalaLeve</strong>
+                    <small>Painel do psicólogo</small>
+                </span>
+            </a>
+            <a class="logout-button" href="../entrar.html">↪ Sair</a>
+        </header>
+
+        <section class="welcome">
+            <div>
+                <span class="eyebrow">ÁREA PROFISSIONAL</span>
+                <h1>Menu do psicólogo</h1>
+                <p>Gerencie seus pacientes e consulte as anotações dos atendimentos.</p>
+            </div>
+            <div class="welcome-icon">✦</div>
+        </section>
+
+        <section class="stats">
+            <article class="stat-card">
+                <span class="stat-icon">♙</span>
+                <div>
+                    <span class="stat-label">Pacientes cadastrados</span>
+                    <strong id="patientCount">0</strong>
+                </div>
+            </article>
+            <article class="stat-card">
+                <span class="stat-icon">▤</span>
+                <div>
+                    <span class="stat-label">Anotações salvas</span>
+                    <strong id="noteCount">0</strong>
+                </div>
+            </article>
+        </section>
+
+<nav class="page-tabs" role="tablist" aria-label="Navegação do menu">
+    <button class="page-tab active" id="patientsTab" role="tab" aria-selected="true" data-page="patientsPage" type="button">
+      Pacientes
+    </button>
+    <button class="page-tab" id="appointmentsTab" role="tab" aria-selected="false" data-page="appointmentsPage" type="button">
+      Agendamentos
+    </button>
+    <button class="page-tab" id="requestsTab" role="tab" aria-selected="false" data-page="requestsPage" type="button">
+      Solicita&ccedil;&otilde;es
+    </button>
+  </nav>
+
+<section id="appointmentsPage" class="page-section">
+    <div class="panel availability-panel">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">AGENDA PROFISSIONAL</span>
+                <h2>Minha disponibilidade</h2>
+                <p>Marque os blocos semanais de uma hora em que pode atender, das 12h às 20h.</p>
+            </div>
+        </div>
+        <div class="availability-legend" aria-label="Legenda dos horários">
+            <span><i class="availability-dot is-available"></i> Disponível</span>
+        </div>
+        <div class="availability-grid" id="availabilityGrid" aria-label="Disponibilidade semanal"></div>
+        <p class="availability-feedback" id="availabilityFeedback" role="status" aria-live="polite">
+            Clique nos horários para marcar ou remover sua disponibilidade.
+        </p>
+        <p class="availability-note">Os horários reservados por pacientes aparecerão em azul com o nome do paciente quando a integração estiver ativa.</p>
+        <section class="reserved-appointments">
+            <h3>Horários reservados</h3>
+            <div class="reserved-appointments-list" id="reservedAppointmentsList"></div>
+            <p class="availability-note" id="reservedAppointmentsEmpty">Nenhum horário reservado no momento.</p>
+            <div class="cancellation-history">
+                <h3>Motivos registrados</h3>
+                <div class="cancellation-table-wrap">
+                    <table class="cancellation-table">
+                        <thead>
+                            <tr><th>Data</th><th>Horário</th><th>Paciente</th><th>Motivo</th></tr>
+                        </thead>
+                        <tbody id="cancellationHistoryBody"></tbody>
+                    </table>
+                </div>
+                <p class="availability-note" id="cancellationHistoryEmpty">Nenhum motivo foi registrado ainda.</p>
+            </div>
+        </section>
+    </div>
+</section>
+
+        <section id="patientsPage" class="page-section active">
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <h2>Meus pacientes</h2>
+                    <p>Consulte os pacientes vinculados ao seu perfil.</p>
+                </div>
+            </div>
+
+            <label class="sr-only" for="patientSearch">Buscar paciente</label>
+            <input class="search-input" id="patientSearch" type="search"
+                placeholder="⌕  Buscar paciente pelo nome...">
+
+            <div class="patient-list" id="patientList"></div>
+            <p class="empty-state" id="patientEmpty" hidden>
+                Nenhum paciente encontrado.
+            </p>
+        </section>
+
+        <section class="panel notes-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Anotações dos atendimentos</h2>
+                    <p>Consulte os registros organizados por paciente.</p>
+                </div>
+            </div>
+
+            <div class="notes-filters">
+                <label class="sr-only" for="notesPatientFilter">Filtrar por paciente</label>
+                <select id="notesPatientFilter">
+                    <option value="all">Todos os pacientes</option>
+                </select>
+
+                <label class="sr-only" for="notesSearch">Buscar anotação</label>
+                <input id="notesSearch" type="search"
+                    placeholder="Buscar por título ou conteúdo...">
+            </div>
+
+            <div class="notes-list" id="notesList"></div>
+            <p class="empty-state" id="notesEmpty" hidden>
+                Nenhuma anotação salva ainda.
+            </p>
+        </section>
+
+        </section>
+
+        <section id="requestsPage" class="page-section">
+            <div class="panel requests-panel">
+                <div class="section-heading requests-heading">
+                    <div>
+                        <span class="eyebrow">NOVOS ATENDIMENTOS</span>
+                        <h2>Solicita&ccedil;&otilde;es pendentes</h2>
+                        <p>Pedidos de pacientes e respons&aacute;veis que aguardam sua an&aacute;lise.</p>
+                    </div>
+                    <button class="primary-button requests-refresh" id="refreshRequests" type="button">Atualizar</button>
+                </div>
+                <p id="requestsStatus" class="form-feedback" role="status" aria-live="polite">A consulta ao servidor ainda n&atilde;o foi configurada.</p>
+                <div class="requests-list" id="requestsList"></div>
+                <p class="empty-state" id="requestsEmpty">Nenhuma solicita&ccedil;&atilde;o foi carregada.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span>© 2026 FalaLeve</span>
+            <span>Acolhimento, escuta e cuidado.</span>
+        </footer>
+    </main>
+
+    <dialog class="note-dialog" id="noteDialog">
+        <div class="dialog-heading">
+            <span class="eyebrow">REGISTRO DO ATENDIMENTO</span>
+            <button class="close-dialog" id="closeNoteDialog"
+                type="button" aria-label="Fechar">×</button>
+        </div>
+        <h2 id="dialogNoteTitle"></h2>
+        <p class="dialog-patient" id="dialogNotePatient"></p>
+        <p class="dialog-date" id="dialogNoteDate"></p>
+        <div class="dialog-content" id="dialogNoteContent"></div>
+        <button class="primary-button" id="doneNoteDialog" type="button">
+            Fechar
+        </button>
+    </dialog>
+
+
+    <dialog id="deletePatientDialog" class="delete-patient-dialog">
+        <div class="delete-dialog-content">
+            <div class="dialog-icon">!</div>
+            <h2>Remover paciente?</h2>
+            <p id="deletePatientMessage">
+                Tem certeza de que deseja remover este paciente?
+            </p>
+            <p class="delete-warning">
+                Essa ação também removerá as anotações e os agendamentos vinculados.
+            </p>
+    
+            <div class="dialog-actions">
+                <button type="button" id="cancelDeletePatient" class="small-button">
+                    Cancelar
+                </button>
+                <button type="button" id="confirmDeletePatient" class="small-button remove-patient-button">
+                    Sim, remover
+                </button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="cancelReservationDialog" class="cancel-reservation-dialog">
+        <form id="cancelReservationForm" class="cancel-reservation-form">
+            <span class="eyebrow">ALTERAÇÃO DE AGENDA</span>
+            <h2>Registrar indisponibilidade</h2>
+            <p id="cancelReservationSummary" class="availability-note"></p>
+            <label for="cancellationReason">Motivo</label>
+            <textarea id="cancellationReason" rows="4" maxlength="500" required
+                placeholder="Descreva por que não poderá comparecer neste horário."></textarea>
+            <p id="cancellationFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+            <div class="cancellation-dialog-actions">
+                <button class="small-button" id="dismissCancellation" type="button">Voltar</button>
+                <button class="primary-button" type="submit">Registrar motivo</button>
+            </div>
+        </form>
+    </dialog>
+    
+
+</body>
+</html>
+
+
+
+
+
+

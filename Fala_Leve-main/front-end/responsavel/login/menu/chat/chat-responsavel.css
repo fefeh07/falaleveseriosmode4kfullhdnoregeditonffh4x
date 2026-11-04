@@ -1,0 +1,18 @@
+@import url("../../../../psicologo/login/menu/chat/chat-psicologo.css");
+
+:root{--navy:#286b4f;--navy-dark:#20583f;--navy-light:#357b5b;--blue:#286b4f;--blue-light:#eaf4ed;--background:#f7f5f4;--text:#332f31;--muted:#746d6d;--border:#e8e2df;--green:#548b68}
+.workspace{grid-template-columns:minmax(0,1fr);width:min(980px,100%);margin:0 auto}
+.chat-panel{border:1px solid var(--border);border-radius:12px;background:#fff;box-shadow:0 5px 18px #3527250b}
+.brand-icon{background:var(--blue-light);color:var(--navy);border-radius:10px}
+.brand h1,.chat-header h2,.confirm-modal h2{color:var(--navy)}
+.status-dot{background:var(--green)}
+.patient-tag{background:var(--blue-light);color:var(--navy)}
+.back-menu-button{color:var(--navy)}
+.back-menu-button:hover{border-color:#a9cbb4;background:var(--blue-light)}
+.received .message-bubble{background:#f1f6f2}
+.sent .message-bubble,.message-form button,.confirm-button{background:var(--navy)}
+.message-form button:hover,.confirm-button:hover{background:var(--navy-light)}
+.message-form input:focus{border-color:var(--blue);box-shadow:0 0 0 3px #286b4f18}
+.chat-disclaimer{color:#746d6d}
+.message-form button:focus-visible,.back-menu-button:focus-visible{outline-color:#286b4f}
+@media(max-width:850px){.workspace{width:100%}}

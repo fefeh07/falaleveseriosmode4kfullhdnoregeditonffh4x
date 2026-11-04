@@ -1,0 +1,177 @@
+:root{font-family:'DM Sans',sans-serif;color:#e9edf4;background:#0b1422;font-synthesis:none;--muted:#9aa8ba;--line:#ffffff18;--mint:#c9574f;--blue:#c9574f}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 82% 4%,#203654 0,transparent 30%),#0b1422}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.topbar{height:76px;padding:0 max(5vw,24px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#0b1422d9}.brand{display:flex;align-items:center;gap:10px;font-family:Manrope,sans-serif;font-size:19px;font-weight:800;letter-spacing:-.8px}.brand>span:last-child>span{color:var(--mint)}.brand-mark{width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:var(--mint);color:#10231f;font-size:19px}.account-area{display:flex;align-items:center;gap:20px}.welcome{color:#c1cada;font-size:13px}.logout-button{padding:9px 14px;border:1px solid var(--line);border-radius:9px;background:#ffffff08;color:#e9edf4;cursor:pointer}.logout-button:hover{border-color:#ffffff48;background:#ffffff12}.page-shell{width:min(1180px,90vw);margin:auto}.hero{min-height:340px;padding:54px 7%;display:flex;align-items:center;justify-content:space-between;position:relative;overflow:hidden;border:1px solid #ffffff18;border-radius:24px;margin:34px 0 56px;background:linear-gradient(110deg,#172943 0%,#172943e8 49%,#16263c99),radial-gradient(ellipse at 85% 55%,#47807c 0%,#223e54 44%,#152943 75%);box-shadow:0 28px 70px #0003}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:700;color:var(--mint)}h1,h2,h3,p{margin-top:0}.hero h1{margin:14px 0 12px;font:800 clamp(40px,6vw,66px)/.99 Manrope,sans-serif;letter-spacing:-3.3px}.hero h1 span{color:var(--mint)}.hero p{max-width:450px;margin:0;color:#bbc7d6;font-size:15px;line-height:1.7}.hero-decoration{width:225px;height:225px;margin-right:6%;position:relative;display:grid;place-items:center;border:1px solid #ffffff38;border-radius:50%;background:linear-gradient(140deg,#ffffff1b,#ffffff03);box-shadow:inset 0 0 60px #ffffff0c,0 20px 80px #0002}.hero-decoration span{font:800 72px Manrope,sans-serif;letter-spacing:-10px;color:#ffffffdb}.hero-decoration i,.hero-decoration b{position:absolute;display:block;border-radius:50%}.hero-decoration i{width:28px;height:28px;right:8px;top:30px;background:var(--mint);box-shadow:0 0 35px #83e1c1aa}.hero-decoration b{width:13px;height:13px;left:12px;bottom:43px;background:#a9c6ff}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:19px}.section-heading h2{font:700 26px Manrope,sans-serif;letter-spacing:-.8px;margin:8px 0 0}.section-heading .eyebrow{color:#9daec5}.search-box{display:flex;align-items:center;gap:9px;width:min(330px,100%);padding:0 14px;border:1px solid var(--line);border-radius:10px;background:#ffffff08;color:#b1bed0}.search-box span{font-size:22px}.search-box input{width:100%;height:44px;border:0;outline:0;background:transparent;color:#f2f5fa;font-size:13px}.search-box input::placeholder{color:#8391a4}.directory-status{min-height:18px;margin:0 0 12px;color:var(--muted);font-size:12px}.psychologist-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:70px}.psych-card{--accent:var(--mint);position:relative;overflow:hidden;min-width:0;border:1px solid #ffffff1c;border-radius:17px;background:linear-gradient(145deg,#1a2b41,#111e30 72%);transition:transform .2s,border-color .2s,box-shadow .2s}.psych-card:hover{transform:translateY(-5px);border-color:#ffffff43;box-shadow:0 18px 38px #0004}.psych-card-top{height:138px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 115%,color-mix(in srgb,var(--accent) 42%,transparent),transparent 62%),linear-gradient(135deg,#283c54,#15253a)}.psych-card-top:before,.psych-card-top:after{content:"";position:absolute;border:1px solid #ffffff18;border-radius:50%;width:175px;height:175px}.psych-card-top:before{left:-60px;top:-115px}.psych-card-top:after{right:-68px;bottom:-128px;width:220px;height:220px}.portrait{position:relative;z-index:1;width:85px;height:85px;display:grid;place-items:center;border:1px solid #ffffff55;border-radius:50%;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 72%,#24344c),#334a60);box-shadow:0 12px 30px #0004;font:800 26px Manrope,sans-serif;color:#f4f8fb}.rating{position:absolute;right:13px;top:12px;z-index:1;padding:6px 9px;border-radius:20px;background:#0b1422a8;color:#f8d98a;font-size:11px;font-weight:700}.psych-card-body{padding:17px}.card-specialty{color:var(--accent);font-size:10px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}.psych-card h3{margin:7px 0 7px;font:700 18px Manrope,sans-serif;letter-spacing:-.4px}.card-location{margin-bottom:13px;color:var(--muted);font-size:12px}.card-tags{display:flex;flex-wrap:wrap;gap:6px;min-height:26px;margin-bottom:18px}.card-tag{padding:5px 8px;border:1px solid #ffffff14;border-radius:20px;color:#c6d1df;font-size:10px}.profile-button{width:100%;height:42px;border:1px solid #ffffff20;border-radius:9px;background:var(--accent);color:#112322;font-size:12px;font-weight:700;cursor:pointer;transition:filter .18s,transform .18s}.profile-button:hover{filter:brightness(1.08);transform:translateY(-1px)}.empty-state{margin:10px 0 70px;padding:50px 20px;text-align:center;border:1px dashed #ffffff2c;border-radius:16px;color:var(--muted)}.empty-state[hidden]{display:none}.empty-icon{width:48px;height:48px;margin:0 auto 15px;display:grid;place-items:center;border-radius:15px;background:#ffffff0c;color:var(--mint);font-size:24px}.empty-state h3{margin-bottom:8px;color:#e7edf6;font:700 18px Manrope,sans-serif}.empty-state p{max-width:430px;margin:0 auto;font-size:13px;line-height:1.6}.profile-dialog{width:min(760px,calc(100vw - 28px));max-height:min(90vh,850px);padding:0;overflow:auto;border:1px solid #ffffff24;border-radius:19px;background:#111e30;color:#e9edf4;box-shadow:0 30px 100px #0009}.profile-dialog::backdrop{background:#050a12c9;backdrop-filter:blur(7px)}.dialog-close{position:sticky;top:12px;float:right;z-index:5;width:36px;height:36px;margin:12px 12px -48px 0;border:1px solid #ffffff26;border-radius:50%;background:#101b2cdd;color:white;font-size:23px;cursor:pointer}.profile-cover{--accent:var(--mint);min-height:180px;padding:33px;display:flex;align-items:center;gap:22px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 115%,color-mix(in srgb,var(--accent) 42%,transparent),transparent 60%),linear-gradient(120deg,#253a53,#142338)}.profile-cover .portrait{width:104px;height:104px;flex:0 0 auto;font-size:32px}.profile-cover h2{margin:7px 0;font:800 25px Manrope,sans-serif}.profile-cover p{margin:0;color:#bac7d6;font-size:13px}.profile-main{padding:25px 30px 30px}.profile-bio{max-width:640px;color:#c4cedb;font-size:13px;line-height:1.75}.schedule-heading{margin:25px 0 13px;display:flex;align-items:end;justify-content:space-between;gap:12px}.schedule-heading h3{margin:0;font:700 17px Manrope,sans-serif}.schedule-heading p{margin:0;color:var(--muted);font-size:11px}.schedule-legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px;color:#b1bed0;font-size:10px}.legend-item{display:flex;align-items:center;gap:6px}.legend-dot{width:8px;height:8px;border-radius:50%;background:var(--mint)}.legend-dot.off{background:#526174}.legend-dot.booked{background:#90b5ff}.week-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.day-row{min-width:0;padding:11px;border:1px solid #ffffff13;border-radius:10px;background:#ffffff05}.day-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;color:#e5ebf4;font-size:11px;font-weight:700}.day-count{color:#99a9bc;font-size:9px;font-weight:500}.slot-list{display:flex;flex-wrap:wrap;gap:5px}.time-slot{padding:6px 7px;border:1px solid #ffffff0e;border-radius:6px;background:#ffffff06;color:#8d9bad;font-size:9px;white-space:nowrap}.time-slot.available{border-color:#83e1c144;background:#83e1c112;color:#a9f0d8}.time-slot.booked{border-color:#94b8ff4a;background:#94b8ff13;color:#bdd1ff}.no-slots{padding:5px 0;color:#8493a6;font-size:10px}.schedule-note{margin:13px 0 0;color:#8190a3;font-size:10px;line-height:1.5}.profile-actions{margin-top:21px;padding-top:18px;border-top:1px solid #ffffff16;display:flex;align-items:center;justify-content:space-between;gap:16px}.profile-actions p{margin:0;color:#aebaca;font-size:11px;line-height:1.5}.profile-actions button{flex:0 0 auto;padding:11px 16px;border:0;border-radius:9px;background:var(--mint);color:#10231f;font-weight:700;font-size:11px;cursor:pointer}.profile-actions button:disabled{opacity:.55;cursor:default}
+@media(max-width:850px){.psychologist-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-decoration{width:175px;height:175px}.hero-decoration span{font-size:60px}}
+@media(max-width:600px){.topbar{height:65px;padding:0 5vw}.welcome{display:none}.page-shell{width:90vw}.hero{min-height:290px;margin:22px 0 40px;padding:35px 7%;border-radius:18px}.hero h1{font-size:47px}.hero p{max-width:340px;font-size:13px}.hero-decoration{position:absolute;width:118px;height:118px;right:-16px;bottom:-18px;opacity:.43}.hero-decoration span{font-size:40px}.hero-decoration i{width:16px;height:16px}.section-heading{align-items:stretch;flex-direction:column;gap:16px}.section-heading h2{font-size:23px}.search-box{width:100%}.psychologist-grid{grid-template-columns:1fr;gap:13px}.psych-card{display:grid;grid-template-columns:108px minmax(0,1fr)}.psych-card-top{height:100%;min-height:190px}.portrait{width:69px;height:69px;font-size:20px}.rating{right:7px;top:8px;font-size:9px}.psych-card-body{padding:14px}.psych-card h3{font-size:16px}.card-tags{margin-bottom:12px}.profile-button{height:38px}.profile-cover{min-height:155px;padding:25px 18px;gap:14px}.profile-cover .portrait{width:77px;height:77px;font-size:25px}.profile-cover h2{font-size:20px}.profile-cover p{font-size:11px}.profile-main{padding:20px 17px 22px}.week-grid{grid-template-columns:1fr}.day-row{padding:10px}.schedule-heading{align-items:flex-start;flex-direction:column}.profile-actions{align-items:stretch;flex-direction:column}.profile-actions button{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Menus, pedidos e agenda na paleta coral da tela de login do paciente. */
+.menu-tabs{display:flex;gap:8px;margin:-28px 0 38px;padding:5px;width:max-content;max-width:100%;border:1px solid #c9574f35;border-radius:12px;background:#c9574f12}
+.menu-tab{display:flex;align-items:center;gap:9px;padding:11px 16px;border:0;border-radius:8px;background:transparent;color:#e9c4c0;font-size:12px;font-weight:700;cursor:pointer}
+.menu-tab.active{background:#c9574f;color:#fff;box-shadow:0 5px 15px #c9574f36}
+.mine-count{min-width:19px;height:19px;display:grid;place-items:center;padding:0 5px;border-radius:20px;background:#ffffff22;font-size:10px}
+.menu-view[hidden]{display:none}
+.directory-status{color:#dfaaa5}
+.hero{background:linear-gradient(110deg,#442b31 0%,#34252fe8 49%,#291f2b99),radial-gradient(ellipse at 85% 55%,#a74848 0%,#55333d 44%,#302431 75%)}
+.psych-card{border-color:#ffffff1b;background:linear-gradient(145deg,#332a31,#1d1c27 72%)}
+.psych-card-top{background:radial-gradient(ellipse at 50% 115%,#c9574f66,transparent 62%),linear-gradient(135deg,#51363a,#292332)}
+.psych-card-top:before,.psych-card-top:after{border-color:#ffd8cc28}
+.portrait{background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 74%,#392f3c),#59414a)}
+.rating{background:#241821d9;color:#ffdfc0}
+.card-tag{border-color:#c9574f32;color:#edcfca;background:#c9574f0c}
+.search-box:focus-within{border-color:#c9574f;box-shadow:0 0 0 3px #c9574f20}
+.search-box span,.empty-icon{color:#ffb1a5}
+.profile-dialog{background:#211d26;border-color:#ffffff24}
+.profile-cover{background:radial-gradient(ellipse at 78% 115%,#c9574f77,transparent 60%),linear-gradient(120deg,#553438,#29212b)}
+.schedule-legend .legend-dot{background:#c9574f}
+.schedule-legend .legend-dot.off{background:#655b64}
+.schedule-legend .legend-dot.booked{background:#ffb89f}
+.time-slot.available{border-color:#c9574f77;background:#c9574f1c;color:#ffd2c9;cursor:pointer}
+.time-slot.available:hover,.time-slot.available.selected{border-color:#ff9d90;background:#c9574f48;color:#fff}
+.time-slot.booked{border-color:#ffb89f67;background:#ffb89f17;color:#ffd0bf}
+.empty-state{border-color:#c9574f55;background:#c9574f08}
+.request-controls{margin-top:21px;padding-top:17px;border-top:1px solid #ffffff16;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.request-help,.request-feedback{grid-column:1/-1;margin:0;color:#d5b7b3;font-size:11px;line-height:1.55}
+.request-button{min-height:42px;padding:10px 13px;border:1px solid #c9574f;border-radius:9px;background:#c9574f;color:#fff;font-size:11px;font-weight:700;cursor:pointer}
+.request-button:hover{filter:brightness(1.1)}
+.request-button.ongoing-request{border-color:#c9574f6b;background:#c9574f14;color:#ffbdb4}
+.request-button:disabled{border-color:#ffffff18;background:#ffffff0a;color:#8b8187;cursor:default;filter:none}
+.request-feedback{color:#ffbdb4}
+.mine-list{display:grid;gap:10px;padding-bottom:70px}
+.mine-card{display:flex;align-items:center;gap:14px;min-width:0;padding:15px;border:1px solid #c9574f35;border-radius:13px;background:linear-gradient(110deg,#32262b,#1c1b25)}
+.mine-avatar{width:49px;height:49px;flex:0 0 auto;display:grid;place-items:center;border-radius:13px;background:color-mix(in srgb,var(--accent) 25%,#2b2028);color:#ffd8ce;font:700 14px Manrope,sans-serif}
+.mine-details{min-width:0;flex:1}.mine-details h3{margin:4px 0;color:#f4e9e8;font:700 15px Manrope,sans-serif}.mine-details p{margin:0;color:#ad9fa3;font-size:11px}.mine-details .card-specialty{font-size:9px}
+.request-state{flex:0 0 auto;padding:7px 10px;border:1px solid #ffca7744;border-radius:30px;background:#ffca7710;color:#ffdc9b;font-size:10px;font-weight:700}.request-state.accepted{border-color:#a9ddbd55;background:#a9ddbd10;color:#b6ebc7}.request-state.rejected{border-color:#ff988b55;background:#ff988b10;color:#ffb6ac}
+.text-action{margin-top:17px;padding:10px 14px;border:0;border-radius:8px;background:#c9574f;color:#fff;font-weight:700;cursor:pointer}
+@media(max-width:600px){.menu-tabs{margin:-20px 0 30px;width:100%}.menu-tab{flex:1;justify-content:center;padding:11px 8px;font-size:10px}.mine-card{align-items:flex-start;flex-wrap:wrap}.request-state{margin-left:63px}.request-controls{grid-template-columns:1fr}.request-help,.request-feedback{grid-column:auto}}
+
+/* Superfícies claras e coral da tela de acesso do paciente. */
+:root{color:#342d35;background:#fff7f4;--muted:#84777a;--line:#eadbd8}
+body{background:radial-gradient(ellipse at 82% 0%,#f5d2c9 0,transparent 33%),#fff7f4;color:#342d35}
+.topbar{background:#fffdfc;border-bottom-color:#eadbd8}
+.brand{color:#342d35}.brand-mark{background:#ffdfc0;color:#a9312e}.welcome{color:#75686b}
+.logout-button{border-color:#e8d5d1;background:#fff;color:#7a3a39}.logout-button:hover{border-color:#c9574f;background:#fff6f3}
+.hero{border-color:#c9574f;background:linear-gradient(110deg,#c9574f 0%,#bd4d48e8 49%,#9e403f99),radial-gradient(ellipse at 85% 55%,#e38c77 0%,#c9574f 44%,#963c3d 75%);box-shadow:0 22px 55px #9d403f25}
+.hero .eyebrow{color:#ffdfc0}.hero h1 span{color:#ffdfc0}.hero p{color:#fff3f1}
+.hero-decoration{border-color:#ffffff70;background:linear-gradient(140deg,#ffffff2b,#ffffff0a);box-shadow:inset 0 0 60px #ffffff12,0 20px 80px #702b2b22}
+.hero-decoration i{background:#ffdfc0;box-shadow:0 0 35px #ffdfc088}.hero-decoration b{background:#fff}
+.section-heading h2{color:#342d35}.section-heading .eyebrow{color:#a74743}
+.search-box{border-color:#eadbd8;background:#fff;color:#a74743}.search-box input{color:#342d35}.search-box input::placeholder{color:#9d9091}
+.directory-status{color:#84777a}
+.psych-card{border-color:#eadbd8;background:#fff;box-shadow:0 8px 24px #5c33300b}.psych-card:hover{border-color:#d99a92;box-shadow:0 16px 34px #7f383322}
+.psych-card-top{background:radial-gradient(ellipse at 50% 115%,#c9574f36,transparent 62%),linear-gradient(135deg,#ffede8,#f8ded7)}
+.psych-card-top:before,.psych-card-top:after{border-color:#c9574f22}.portrait{border-color:#ffffffb0;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 76%,#fff),#a74643);box-shadow:0 12px 30px #63262320;color:#fff}
+.rating{background:#fffdf4;color:#985c36;box-shadow:0 2px 10px #5c302010}
+.psych-card h3{color:#342d35}.card-location{color:#84777a}.card-tag{border-color:#eedbd7;background:#fff8f5;color:#7c5553}
+.profile-button{color:#fff}.profile-button:hover{filter:brightness(.94)}
+.empty-state{border-color:#e4c7c1;background:#fff}.empty-state h3{color:#342d35}.empty-state p{color:#84777a}.empty-icon{background:#fff0ec;color:#c9574f}
+.profile-dialog{border-color:#eadbd8;background:#fff;color:#342d35;box-shadow:0 30px 100px #4323213d}.profile-dialog::backdrop{background:#39232888}
+.dialog-close{border-color:#eadbd8;background:#fff;color:#7a3a39;box-shadow:0 2px 10px #4222221c}
+.profile-cover{background:radial-gradient(ellipse at 78% 115%,#ffdfc088,transparent 60%),linear-gradient(120deg,#c9574f,#a64342)}
+.profile-cover p{color:#fff3f1}.profile-bio{color:#66585a}.schedule-heading h3{color:#342d35}.schedule-heading p,.schedule-note{color:#84777a}
+.schedule-legend{color:#75686b}.schedule-legend .legend-dot{background:#c9574f}.schedule-legend .legend-dot.off{background:#c7babc}.schedule-legend .legend-dot.booked{background:#e99b82}
+.day-row{border-color:#eadbd8;background:#fff9f7}.day-title{color:#42373b}.day-count{color:#8f8082}
+.time-slot{border-color:#eadbd8;background:#fff;color:#8f8082}.time-slot.available{border-color:#c9574f66;background:#fff0ec;color:#a83f3a}.time-slot.available:hover,.time-slot.available.selected{border-color:#c9574f;background:#c9574f;color:#fff}.time-slot.booked{border-color:#e99b8277;background:#ffdfc066;color:#87433a}
+.request-controls{border-color:#eadbd8}.request-help{color:#75686b}.request-button{border-color:#c9574f;background:#c9574f;color:#fff}.request-button:hover{filter:brightness(.94)}.request-button.ongoing-request{border-color:#e8c5be;background:#fff1ed;color:#a74743}.request-button:disabled{border-color:#eadbd8;background:#f4eeee;color:#9b8f91}.request-feedback{color:#a74743}
+.menu-tabs{border-color:#e9c7c1;background:#fff}.menu-tab{color:#865d5b}.menu-tab.active{background:#c9574f;color:#fff;box-shadow:0 5px 15px #c9574f30}.mine-count{background:#ffffff38}
+.mine-card{border-color:#eadbd8;background:#fff;box-shadow:0 6px 20px #5c33300b}.mine-avatar{background:color-mix(in srgb,var(--accent) 18%,#fff);color:#a74743}.mine-details h3{color:#342d35}.mine-details p{color:#84777a}.mine-details .card-specialty{color:#a74743}
+.request-state.pending{border-color:#e7bd6e;background:#fff9e9;color:#896327}.request-state.accepted{border-color:#92c7a0;background:#eff9f0;color:#397348}.request-state.rejected{border-color:#e3aaa3;background:#fff0ee;color:#a54740}
+.text-action{background:#c9574f;color:#fff}
+.request-cancel-button{flex:0 0 auto;padding:9px 12px;border:1px solid #e3aaa3;border-radius:8px;background:#fff0ee;color:#a54740;font-size:10px;font-weight:700;cursor:pointer}
+.request-cancel-button:hover{border-color:#c9574f;background:#c9574f;color:#fff}
+.request-history-card .mine-details p{max-width:540px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.long-request-panel{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:20px;background:#39232899;backdrop-filter:blur(5px)}
+.long-request-panel[hidden]{display:none}
+.long-request-card{position:relative;width:min(540px,100%);max-height:90vh;overflow:auto;padding:30px;border:1px solid #eadbd8;border-radius:18px;background:#fff;box-shadow:0 28px 90px #4323214a;color:#342d35}
+.long-request-card .form-close{position:absolute;top:12px;right:12px;float:none;margin:0}
+.long-request-card h2{max-width:410px;margin:10px 0 8px;color:#342d35;font:700 22px Manrope,sans-serif;letter-spacing:-.5px}
+.long-request-card>p{margin:0 0 19px;color:#84777a;font-size:12px;line-height:1.6}
+.long-request-card form{display:grid;gap:9px}
+.long-request-card label{margin-top:5px;color:#57484b;font-size:11px;font-weight:700}
+.long-request-card select,.long-request-card textarea{width:100%;padding:12px;border:1px solid #eadbd8;border-radius:9px;outline:none;background:#fffaf8;color:#342d35;font:12px 'DM Sans',sans-serif}
+.long-request-card textarea{min-height:120px;resize:vertical;line-height:1.55}
+.long-request-card select:focus,.long-request-card textarea:focus{border-color:#c9574f;box-shadow:0 0 0 3px #c9574f19}
+.long-request-card textarea::placeholder{color:#a39798}
+.form-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:8px}
+.form-feedback{min-height:16px;margin:0;color:#a74743;font-size:11px;line-height:1.45}
+.form-actions .request-button{min-width:120px}
+.form-actions .ongoing-request{color:#a74743}
+@media(max-width:600px){.menu-tabs{overflow-x:auto;justify-content:flex-start}.menu-tab{flex:0 0 auto}.request-history-card .mine-details p{white-space:normal}.request-cancel-button{margin-left:63px}.long-request-card{padding:27px 19px 20px}.form-actions{flex-direction:column-reverse}.form-actions .request-button{width:100%}}
+
+/* Acabamento editorial e profissional */
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#332f31;background:#f7f5f4;--muted:#746d6d;--line:#e8e2df}
+body{background:#f7f5f4;color:#332f31}
+.topbar{height:68px;padding:0 max(4vw,22px);background:#fff;border-bottom:1px solid #e9e3e0}
+.brand{font-family:inherit;font-size:17px;letter-spacing:-.35px}.brand-mark{border-radius:8px;background:#c9574f;color:white;font-size:17px}
+.welcome{color:#6f6868;font-size:13px}.logout-button{border-color:#ddd4d1;background:#fff;color:#554d4c;border-radius:7px}.logout-button:hover{border-color:#c9574f;background:#fff8f6}
+.page-shell{width:min(1120px,92vw)}
+.hero{min-height:0;margin:30px 0 27px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+.hero .eyebrow{color:#9b514c;font-size:10px;letter-spacing:1.25px}
+.hero h1{margin:9px 0 7px;color:#302b2c;font-family:inherit;font-size:clamp(29px,4vw,38px);font-weight:700;line-height:1.15;letter-spacing:-1.2px}
+.hero h1 span{color:#c9574f}.hero p{max-width:600px;color:#706969;font-size:14px;line-height:1.6}
+.section-heading{align-items:center;margin-bottom:15px}.section-heading h2{font-family:inherit;color:#332f31;font-size:21px;letter-spacing:-.4px}.section-heading .eyebrow{color:#9b514c;font-size:9px;letter-spacing:1.2px}
+.menu-tabs{width:100%;margin:0 0 27px;padding:0;gap:25px;border:0;border-bottom:1px solid #e4dcd9;border-radius:0;background:transparent}
+.menu-tab{position:relative;padding:12px 1px;color:#6f6665;font-size:12px;font-weight:600}
+.menu-tab:hover{color:#a74640}.menu-tab.active{border-radius:0;background:transparent;color:#a74640;box-shadow:none}
+.menu-tab.active:after{content:"";position:absolute;right:0;bottom:-1px;left:0;height:2px;background:#c9574f}
+.mine-count{min-width:18px;height:18px;background:#f4e9e6;color:#9a4d47;font-size:9px}
+.directory-status{color:#716969;font-size:12px}
+.search-box{width:min(310px,100%);border-color:#ddd6d3;border-radius:7px;background:#fff;color:#867b79}
+.search-box input{height:40px;color:#332f31;font-size:12px}.search-box input::placeholder{color:#928988}
+.psychologist-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding-bottom:60px}
+.psych-card{display:grid;grid-template-columns:60px minmax(0,1fr);align-items:center;gap:14px;padding:17px;border:1px solid #e7e0dd;border-radius:10px;background:#fff;box-shadow:0 2px 7px #35272508;transition:border-color .16s,box-shadow .16s}
+.psych-card:hover{transform:none;border-color:#d7b5af;box-shadow:0 5px 15px #3527250d}
+.psych-card-top{width:54px;height:54px;min-height:0;border-radius:50%;background:#f8eae7;overflow:visible}
+.psych-card-top:before,.psych-card-top:after{display:none}
+.portrait{width:46px;height:46px;border:0;background:#f1d7d2;box-shadow:none;color:#8d423d;font-family:inherit;font-size:15px;font-weight:700}
+.rating{top:-7px;right:-12px;padding:4px 6px;border:1px solid #ead6d1;border-radius:5px;background:#fff;color:#78615e;box-shadow:none;font-size:8px;font-weight:600;letter-spacing:.2px}
+.psych-card-body{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:12px;padding:0}
+.card-specialty{grid-column:1/-1;color:#a04e48;font-size:9px;letter-spacing:.65px}
+.psych-card h3{grid-column:1;margin:4px 0;color:#332f31;font-family:inherit;font-size:15px;font-weight:650;letter-spacing:0}
+.card-location{grid-column:1;margin:0;color:#786f6e;font-size:11px}
+.card-tags{grid-column:1;min-height:0;margin:9px 0 0;gap:5px}
+.card-tag{padding:4px 7px;border:1px solid #e9e2df;border-radius:5px;background:#faf9f8;color:#635b5a;font-size:9px}
+.profile-button{grid-column:2;grid-row:2/5;width:auto;min-width:132px;height:36px;padding:0 11px;border:1px solid #d9aaa4;border-radius:6px;background:#fff;color:#a0443f;font-size:10px;font-weight:650;white-space:nowrap;transition:background .15s,color .15s}
+.profile-button:hover{transform:none;background:#c9574f;color:#fff}
+.empty-state{padding:38px 20px;border:1px solid #e7e0dd;border-radius:9px;background:#fff}
+.empty-icon{width:40px;height:40px;border-radius:10px;background:#f8eae7;color:#a74842;font-size:20px}
+.empty-state h3{color:#332f31;font-family:inherit;font-size:16px}.empty-state p{color:#716969;font-size:12px}
+.profile-dialog{border-color:#e4ddda;border-radius:12px;background:#fff;color:#332f31;box-shadow:0 18px 60px #2b1d1c36}
+.dialog-close{border-color:#e2d9d6;background:#fff;color:#554d4c;box-shadow:none}
+.profile-cover{min-height:155px;padding:28px;background:linear-gradient(115deg,#c9574f,#ad4944)}
+.profile-cover .portrait{width:74px;height:74px;background:#f5deda;color:#923f3b;font-size:22px}
+.profile-cover h2{font-family:inherit;font-size:22px;letter-spacing:-.3px}.profile-cover .card-specialty{color:#ffe3de}.profile-cover p{color:#fff4f1}
+.profile-main{padding:23px 27px 27px}.profile-bio{color:#5f5756;font-size:13px;line-height:1.7}
+.schedule-heading h3{color:#332f31;font-family:inherit;font-size:16px}.schedule-heading p,.schedule-note{color:#786f6e}
+.schedule-legend{color:#675e5d}.day-row{border-color:#e9e2df;border-radius:7px;background:#fcfbfa}.day-title{color:#433b3a;font-size:11px}.day-count{color:#786f6e}
+.time-slot{border-color:#e5ddda;border-radius:5px;background:#fff;color:#756d6c;font-size:9px}
+.time-slot.available{border-color:#dca49d;background:#fff4f2;color:#9e433e}.time-slot.available:hover,.time-slot.available.selected{border-color:#b84e48;background:#c9574f;color:#fff}
+.time-slot.booked{border-color:#e5c2a9;background:#fbf1e8;color:#7b513c}
+.request-controls{border-color:#e7e0dd}.request-help{color:#746b6a}.request-button{border-radius:6px;background:#c9574f;color:#fff;font-size:11px}.request-button:hover{transform:none;filter:brightness(.95)}
+.request-button.ongoing-request{border-color:#dfc2bd;background:#fff;color:#9f4944}.request-button.ongoing-request:hover{background:#fff5f3}
+.request-feedback,.form-feedback{color:#98443f}
+.mine-list{gap:9px}.mine-card{gap:12px;padding:13px;border:1px solid #e7e0dd;border-radius:9px;background:#fff;box-shadow:none}
+.mine-avatar{width:43px;height:43px;border-radius:8px;background:#f8eae7;color:#9e4842;font-family:inherit}
+.mine-details h3{color:#332f31;font-family:inherit;font-size:14px}.mine-details p{color:#746b6a;font-size:10px}.mine-details .card-specialty{color:#9b514c}
+.request-state{border-radius:5px;font-size:9px}.request-cancel-button{border-radius:6px;font-size:10px}
+.long-request-panel{background:#261c1b70;backdrop-filter:blur(2px)}
+.long-request-card{border-color:#e5ddda;border-radius:11px;box-shadow:0 15px 50px #2b1d1c2e}
+.long-request-card h2{font-family:inherit;font-size:20px}.long-request-card>p{color:#746b6a;font-size:12px}
+.long-request-card label{color:#514847;font-size:11px}.long-request-card textarea{border-color:#ded6d3;border-radius:6px;background:#fff;color:#332f31}
+.long-request-card textarea:focus{border-color:#c9574f;box-shadow:0 0 0 3px #c9574f18}
+.form-actions .request-button{min-width:125px}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #c9574f66;outline-offset:2px}
+@media(max-width:760px){.psychologist-grid{grid-template-columns:1fr}.hero{margin-top:24px}.profile-button{min-width:0}}
+@media(max-width:520px){.topbar{height:62px}.account-area{gap:10px}.page-shell{width:91vw}.hero{margin-bottom:22px}.hero h1{font-size:30px}.menu-tabs{gap:17px;margin-bottom:22px}.menu-tab{font-size:11px}.psych-card{grid-template-columns:48px minmax(0,1fr);gap:11px;padding:13px}.psych-card-top{width:45px;height:45px}.portrait{width:41px;height:41px;font-size:13px}.psych-card-body{grid-template-columns:minmax(0,1fr) auto;column-gap:7px}.psych-card h3{font-size:13px}.profile-button{min-width:94px;height:34px;padding:0 7px;font-size:9px}.card-tags{gap:4px}.card-tag{padding:4px 5px;font-size:8px}.profile-main{padding:19px 16px 21px}.profile-cover{padding:22px 17px}.mine-card{flex-wrap:wrap}.request-history-card .mine-details p{white-space:normal}.request-cancel-button{margin-left:55px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+@keyframes tab-content-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.menu-view.tab-enter{animation:tab-content-enter 240ms ease-out both}
+.hero>div.tab-enter{animation:tab-content-enter 220ms ease-out both}
+@media(prefers-reduced-motion:reduce){.menu-view.tab-enter,.hero>div.tab-enter{animation:none}}
+@keyframes page-slide-from-right{from{opacity:.75;transform:translateX(34px)}to{opacity:1;transform:translateX(0)}}
+@keyframes page-slide-from-left{from{opacity:.75;transform:translateX(-34px)}to{opacity:1;transform:translateX(0)}}
+.menu-view.slide-from-right,.hero>div.slide-from-right{animation:page-slide-from-right 300ms cubic-bezier(.2,.7,.25,1) both}
+.menu-view.slide-from-left,.hero>div.slide-from-left{animation:page-slide-from-left 300ms cubic-bezier(.2,.7,.25,1) both}
+@media(prefers-reduced-motion:reduce){.menu-view.slide-from-right,.menu-view.slide-from-left,.hero>div.slide-from-right,.hero>div.slide-from-left{animation:none}}
+.chat-open-link{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border:1px solid #d9aaa4;border-radius:6px;background:#fff;color:#9f413c;font-size:10px;font-weight:650;text-decoration:none}
+.chat-open-link:hover{background:#c9574f;color:#fff}

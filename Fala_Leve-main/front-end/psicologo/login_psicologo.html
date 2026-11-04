@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Psicólogo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+  <link rel="stylesheet" href="psico.css">
+</head>
+<body>
+
+  <div class="card-externo">
+    <div class="card">
+
+      <!-- PAINEL ESQUERDO -->
+      <div class="painel-esquerdo">
+        <div class="logo">
+          <i class="ti ti-brain"></i>
+        </div>
+        <h1>Acesso do psicólogo</h1>
+        <p class="sub">Insira seus dados profissionais para acessar o painel de atendimentos.</p>
+        <div class="badge">
+          <i class="ti ti-shield-check"></i> Área restrita a profissionais
+        </div>
+      </div>
+
+      <!-- PAINEL DIREITO -->
+      <div class="painel-direito">
+
+        <p class="section-label">Dados pessoais</p>
+
+        <div class="field">
+          <label for="nome">Nome completo</label>
+          <i class="ti ti-user field-icon"></i>
+          <input id="nome" type="text" placeholder="Seu nome completo">
+          <span class="error" id="erro-nome">Informe seu nome completo.</span>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="cpf">CPF</label>
+            <i class="ti ti-id-badge field-icon"></i>
+            <input id="cpf" type="text" placeholder="000.000.000-00" maxlength="14">
+            <span class="error" id="erro-cpf">CPF inválido.</span>
+          </div>
+          <div class="field">
+            <label for="idade">Idade</label>
+            <i class="ti ti-calendar field-icon"></i>
+            <input id="idade" type="number" placeholder="Ex: 35" min="18" max="99">
+            <span class="error" id="erro-idade">Informe sua idade.</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail profissional</label>
+          <i class="ti ti-mail field-icon"></i>
+          <input id="email" type="email" placeholder="seu@email.com">
+          <span class="error" id="erro-email">Informe um e-mail válido.</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="section-label">Registro profissional</p>
+
+        <div class="row">
+          <div class="field">
+            <label for="crp">CRP</label>
+            <i class="ti ti-certificate field-icon"></i>
+            <input id="crp" type="text" placeholder="00/00000" maxlength="8">
+            <p class="crp-hint">Formato: 00/00000</p>
+            <span class="error" id="erro-crp">CRP inválido.</span>
+          </div>
+          <div class="field">
+            <label for="senha">Senha</label>
+            <i class="ti ti-lock field-icon"></i>
+            <input id="senha" type="password" placeholder="Digite sua senha" maxlength="16">
+            <button type="button" onclick="toggleSenha()" id="btn-olho">
+              <i class="ti ti-eye" id="icone-olho"></i>
+            </button>
+            <span class="error" id="erro-senha"></span>
+            <ul class="requisitos" id="requisitos">
+              <li id="req-tamanho"><i class="ti ti-circle"></i> Entre 8 e 16 caracteres</li>
+              <li id="req-maiuscula"><i class="ti ti-circle"></i> Pelo menos 1 letra maiúscula</li>
+              <li id="req-especial"><i class="ti ti-circle"></i> Pelo menos 1 caracter especial</li>
+            </ul>
+          </div>
+
+        <button class="btn" onclick="entrar()">Entrar →</button>
+
+        <p class="footer-note">
+          Problemas com acesso? <a href="#">Fale com o suporte</a>
+        </p>
+        <p class="footer-note account-link">J&aacute; tem conta? <a href="login/entrar.html">Entrar</a></p>
+
+      </div>
+    </div>
+  </div>
+<script src="psico.js"></script>
+</body>
+</html>
+
+
+
+
+
+

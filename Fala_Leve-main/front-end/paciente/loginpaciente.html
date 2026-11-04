@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Paciente</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="paciente.js" defer></script>
+</head>
+<body>
+
+  <div class="card">
+    <section class="card-intro">
+      <div class="logo">
+        <i class="ti ti-heart"></i>
+      </div>
+
+      <div class="badge">
+        <i class="ti ti-lock"></i> Dados protegidos e sigilosos
+      </div>
+
+      <h1>Bem-vindo ao nosso espaço</h1>
+      <p class="sub">Preencha seus dados para iniciarmos seu atendimento. Todas as informações são tratadas com total confidencialidade.</p>
+    </section>
+
+    <div class="card-content">
+      <div class="patient-form">
+        <p class="section-label">Identificação</p>
+
+        <div class="field field-wide">
+          <label for="nome">Nome completo</label>
+          <input id="nome" type="text" placeholder="Seu nome">
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="cpf">CPF</label>
+            <input id="cpf" type="text" placeholder="000.000.000-00" maxlength="14">
+          </div>
+          <div class="field">
+            <label for="idade">Idade</label>
+            <input id="idade" type="number" placeholder="Ex: 28" min="0" max="120">
+          </div>
+        </div>
+
+        <div class="field field-wide">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="seu@email.com">
+        </div>
+
+        <div class="field field-wide">
+          <label for="senha">Senha</label>
+          <div class="password-wrap">
+            <input id="senha" type="password" placeholder="Digite sua senha" autocomplete="new-password" minlength="8" maxlength="16" pattern="(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{8,16}" title="Use de 8 a 16 caracteres, incluindo uma letra maiúscula e um caractere especial">
+            <button class="password-toggle" id="toggleSenha" type="button" aria-label="Mostrar senha" aria-pressed="false">
+              <i class="ti ti-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+          <ul class="password-requirements" aria-label="Requisitos da senha">
+            <li id="req-length"><i class="ti ti-circle" aria-hidden="true"></i><span>De 8 a 16 caracteres</span></li>
+            <li id="req-uppercase"><i class="ti ti-circle" aria-hidden="true"></i><span>Pelo menos uma letra maiúscula</span></li>
+            <li id="req-special"><i class="ti ti-circle" aria-hidden="true"></i><span>Pelo menos um caractere especial</span></li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <button class="btn" onclick="enviarFormulario()">Continuar →</button>
+
+        <p class="footer-note">
+          Ao continuar, você concorda com nossa <a href="#">política de privacidade</a>. Seus dados jamais serão compartilhados.
+        </p>
+        <p class="footer-note account-link">J&aacute; tem conta? <a href="login/entrar.html">Entrar</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+

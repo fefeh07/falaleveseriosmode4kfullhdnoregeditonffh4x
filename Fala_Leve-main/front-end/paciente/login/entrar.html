@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar — Paciente</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="entrar.js" defer></script>
+</head>
+<body>
+
+  <div class="card">
+    <section class="card-intro">
+      <div class="logo">
+        <i class="ti ti-heart"></i>
+      </div>
+
+      <div class="badge">
+        <i class="ti ti-lock"></i> Dados protegidos e sigilosos
+      </div>
+
+      <h1>Que bom ter você de volta</h1>
+      <p class="sub">Entre com seu e-mail e senha para acessar seus atendimentos.</p>
+    </section>
+
+    <div class="card-content">
+      <form class="patient-form" id="form-login" novalidate>
+        <p class="section-label">Acesso</p>
+
+        <div class="field field-wide">
+          <label for="email_paciente">E-mail</label>
+          <input id="email_paciente" name="email_paciente" type="email" placeholder="seu@email.com" autocomplete="username" required>
+        </div>
+
+        <div class="field field-wide">
+          <label for="senha">Senha</label>
+          <div class="password-wrap">
+            <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+            <button class="password-toggle" id="toggleSenha" type="button" aria-label="Mostrar senha" aria-pressed="false">
+              <i class="ti ti-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <button class="btn" type="submit">Entrar →</button>
+
+        <p class="footer-note" id="msg-status" role="status"></p>
+        <p class="footer-note">Demonstração local: <strong>demo-paciente@falaleve.local</strong> · senha <strong>Paciente123!</strong></p>
+        <p class="footer-note">
+          Não tem conta? <a href="../loginpaciente.html">Cadastre-se</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

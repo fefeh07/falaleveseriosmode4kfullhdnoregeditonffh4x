@@ -1,0 +1,1 @@
+"""Routers por tabela (um arquivo por tabela da modelagem)."""

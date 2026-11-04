@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c9574f">
+    <title>Encontre seu psicólogo — Fala Leve</title>
+    <link rel="stylesheet" href="menu-paciente.css">
+    <script src="menu-paciente.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../../../index.html" aria-label="Fala Leve, início">
+            <span class="brand-mark">F</span><span>fala<span>leve</span></span>
+        </a>
+        <div class="account-area">
+            <span class="welcome" id="patientWelcome">Área do paciente</span>
+            <button class="logout-button" id="logoutButton" type="button">Sair</button>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero">
+            <div>
+                <span class="eyebrow" id="heroEyebrow">FALA LEVE · ÁREA DO PACIENTE</span>
+                <h1 id="heroTitle">Encontre um <span>psicólogo</span></h1>
+                <p id="heroDescription">Consulte os perfis e veja os horários disponíveis para atendimento.</p>
+            </div>
+        </section>
+
+        <nav class="menu-tabs" aria-label="Menu do paciente">
+            <button class="menu-tab active" type="button" data-view="discover" aria-selected="true">Encontrar psicólogo</button>
+            <button class="menu-tab" type="button" data-view="mine" aria-selected="false">Meus psicólogos <span class="mine-count" id="mineCount">0</span></button>
+            <button class="menu-tab" type="button" data-view="appointments" aria-selected="false">Pedidos e horários <span class="mine-count" id="requestCount">0</span></button>
+        </nav>
+
+        <section class="directory menu-view active" id="discoverView" aria-labelledby="directoryTitle">
+            <div class="section-heading">
+                <div><span class="eyebrow">PROFISSIONAIS</span><h2 id="directoryTitle">Psicólogos disponíveis</h2></div>
+                <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchPsychologists" type="search" placeholder="Buscar por nome ou abordagem" aria-label="Buscar psicólogos"></label>
+            </div>
+            <p class="directory-status" id="directoryStatus" role="status"></p>
+            <div class="psychologist-grid" id="psychologistGrid"></div>
+            <div class="empty-state" id="directoryEmpty" hidden>
+                <h3>Nenhum profissional por aqui ainda</h3>
+                <p>Nenhum profissional disponível no momento. Tente novamente mais tarde.</p>
+            </div>
+        </section>
+
+        <section class="directory menu-view" id="mineView" aria-labelledby="mineTitle" hidden>
+            <div class="section-heading"><div><span class="eyebrow">SEU ACOMPANHAMENTO</span><h2 id="mineTitle">Meus psicólogos</h2></div></div>
+            <p class="directory-status" id="mineStatus" role="status"></p>
+            <div class="mine-list" id="mineList"></div>
+            <div class="empty-state" id="mineEmpty" hidden>
+                <h3>Seus psicólogos aparecerão aqui</h3>
+                <p>Quando um profissional aceitar seu pedido de acompanhamento, o vínculo aparecerá nesta lista.</p>
+                <button class="text-action" id="goDiscover" type="button">Encontrar psicólogos</button>
+            </div>
+        </section>
+
+        <section class="directory menu-view" id="appointmentsView" aria-labelledby="appointmentsTitle" hidden>
+                <div class="section-heading"><div><span class="eyebrow">ACOMPANHAMENTO</span><h2 id="appointmentsTitle">Pedidos e horários</h2></div></div>
+            <p class="directory-status" id="appointmentsStatus" role="status"></p>
+            <div class="mine-list" id="appointmentsList"></div>
+            <div class="empty-state" id="appointmentsEmpty" hidden>
+                <h3>Nenhum pedido ou horário solicitado</h3>
+                <p>Os pedidos de horário e de acompanhamento ficarão registrados aqui.</p>
+                <button class="text-action" id="goDiscoverFromRequests" type="button">Encontrar psicólogos</button>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="profile-dialog" id="profileDialog" aria-labelledby="profileName">
+        <button class="dialog-close" id="closeProfile" type="button" aria-label="Fechar perfil">×</button>
+        <div id="profileContent"></div>
+        <section class="long-request-panel" id="longRequestPanel" hidden aria-labelledby="longRequestTitle">
+            <div class="long-request-card">
+                <button class="dialog-close form-close" id="closeLongRequest" type="button" aria-label="Fechar formulário">×</button>
+                <span class="eyebrow">PEDIDO DE ACOMPANHAMENTO</span>
+                <h2 id="longRequestTitle">Descreva sua situação</h2>
+                <p>O texto será enviado ao psicólogo escolhido.</p>
+                <form id="longRequestForm">
+                    <label for="situationDescription">O que está acontecendo e o que espera do acompanhamento?</label>
+                    <textarea id="situationDescription" name="descricao_situacao" rows="5" minlength="20" maxlength="1200" placeholder="Escreva sua mensagem (mínimo de 20 caracteres)." required></textarea>
+                    <p class="form-feedback" id="longRequestFeedback" role="status"></p>
+                    <div class="form-actions"><button class="request-button ongoing-request" id="cancelLongRequest" type="button">Voltar</button><button class="request-button" type="submit">Enviar pedido</button></div>
+                </form>
+            </div>
+        </section>
+    </dialog>
+</body>
+</html>
